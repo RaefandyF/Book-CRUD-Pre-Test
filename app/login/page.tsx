@@ -8,7 +8,6 @@ export default async function Login() {
   return (
     <div>
         <Lists />
-        <pre>{JSON.stringify(session)}</pre>
     </div>
   )
 }

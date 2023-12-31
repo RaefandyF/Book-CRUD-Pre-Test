@@ -19,12 +19,10 @@ export const authOptions : NextAuthOptions = {
                 }
             },
             async authorize(credentials){
-                if(!credentials?.email || !credentials.password) return null
-                
-                
+                const user = {id:"id", username:"Hallo", email: "example@example.com"}
+                return user
             }
 
-            
         })
     ]
 }

@@ -1,6 +1,7 @@
 import AddBook from "./addBook";
 import DeleteBook from "./deleteBook";
 import UpdateProduct from "./updateBook";
+import Login from "../login/page";
 
 type Book = {
     id: number,
@@ -38,6 +39,7 @@ export default async function BookList() {
     <div className='ml-[2vw]'>
         <h1 className="text-[3vw] text-bold" >Data List Buku</h1>
         <AddBook />
+        <Login />
         {/* <button className='mt-[1vw] bg-blue-600 w-[10vw] h-[3vw] rounded-[0.5vw] text-white text-[1.3vw]'>Tambah Buku</button> */}
         <table className='mt-[1.5vw] border-solid border-black border-[0.1vw]'>
             <tr className='text-[1.3vw]'>
